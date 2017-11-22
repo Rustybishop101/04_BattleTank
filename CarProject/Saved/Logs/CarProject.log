@@ -1,0 +1,823 @@
+﻿Log file open, 11/04/17 15:51:42
+LogInit:Display: Running engine for game: CarProject
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(2112483650) SRandInit(2112483650).
+LogTaskGraph: Started task graph with 5 named threads and 6 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.073736
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.16-CL-3561208
+LogInit: Engine Version: 4.16.3-3561208+++UE4+Release-4.16
+LogInit: Compatible Engine Version: 4.16.0-3452394+++UE4+Release-4.16
+LogInit: Net CL: 3452394
+LogDevObjectVersion: Number of dev versions registered: 16
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 9
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 17
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 23
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 15
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 4
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 1
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 3
+LogInit: Compiled (64-bit): Jul 28 2017 11:49:47
+LogInit: Compiled with Visual C++: 19.00.24215.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.16
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.16/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.11.04-22.51.43:363][  0]LogInit: Selected Device Profile: [Windows]
+[2017.11.04-22.51.43:363][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.11.04-22.51.43:371][  0]LogInit: Computer: LAPTOP-NHV6Q3G3
+[2017.11.04-22.51.43:371][  0]LogInit: User: miste
+[2017.11.04-22.51.43:371][  0]LogInit: CPU Page size=4096, Cores=2
+[2017.11.04-22.51.43:371][  0]LogInit: High frequency timer resolution =2.835940 MHz
+[2017.11.04-22.51.43:371][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2017.11.04-22.51.43:371][  0]LogMemory: Platform Memory Stats for Windows
+[2017.11.04-22.51.43:371][  0]LogMemory: Process Physical Memory: 271.58 MB used, 271.58 MB peak
+[2017.11.04-22.51.43:371][  0]LogMemory: Process Virtual Memory: 258.34 MB used, 258.34 MB peak
+[2017.11.04-22.51.43:371][  0]LogMemory: Physical Memory: 4907.22 MB used,  11361.94 MB free, 16269.16 MB total
+[2017.11.04-22.51.43:371][  0]LogMemory: Virtual Memory: 634.01 MB used,  11361.94 MB free, 134217728.00 MB total
+[2017.11.04-22.51.43:471][  0]LogInit: Using OS detected language (en-US).
+[2017.11.04-22.51.43:471][  0]LogInit: Using OS detected locale (en-US).
+[2017.11.04-22.51.43:474][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2017.11.04-22.51.44:346][  0]LogD3D11RHI: D3D11 adapters:
+[2017.11.04-22.51.44:393][  0]LogD3D11RHI:    0. 'NVIDIA GeForce 940MX' (Feature Level 11_0)
+[2017.11.04-22.51.44:393][  0]LogD3D11RHI:       2020/0/8134 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2017.11.04-22.51.44:400][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 620' (Feature Level 11_0)
+[2017.11.04-22.51.44:400][  0]LogD3D11RHI:       128/0/8134 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2017.11.04-22.51.44:402][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.11.04-22.51.44:402][  0]LogD3D11RHI:       0/0/8134 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.11.04-22.51.44:402][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.11.04-22.51.44:409][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.11.04-22.51.44:409][  0]LogD3D11RHI:     GPU DeviceId: 0x134d (for the marketing name, search the web for "GPU Device Id")
+[2017.11.04-22.51.44:409][  0]LogWindows: EnumDisplayDevices:
+[2017.11.04-22.51.44:409][  0]LogWindows:    0. 'Intel(R) HD Graphics 620' (P:1 D:1)
+[2017.11.04-22.51.44:409][  0]LogWindows:    1. 'Intel(R) HD Graphics 620' (P:0 D:0)
+[2017.11.04-22.51.44:409][  0]LogWindows:    2. 'Intel(R) HD Graphics 620' (P:0 D:0)
+[2017.11.04-22.51.44:409][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2017.11.04-22.51.44:409][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce 940MX
+[2017.11.04-22.51.44:409][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2017.11.04-22.51.44:409][  0]LogD3D11RHI:      Driver Date: Unknown
+[2017.11.04-22.51.44:409][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.11.04-22.51.44:435][  0]LogD3D11RHI: Async texture creation enabled
+[2017.11.04-22.51.44:452][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2017.11.04-22.51.44:453][  0]LogShaderCompilers: Guid format shader working directory is -35 characters bigger than the processId version (../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Intermediate/Shaders/WorkingDirectory/16612/).
+[2017.11.04-22.51.44:453][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/miste/AppData/Local/Temp/UnrealShaderWorkingDir/69B9B0F3447C6CD0B8B244B060C42A8F/'.
+[2017.11.04-22.51.44:453][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.11.04-22.51.45:427][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.11.04-22.51.45:476][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.11.04-22.51.45:523][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.11.04-22.51.45:571][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.11.04-22.51.45:619][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.11.04-22.51.45:668][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.11.04-22.51.45:717][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.11.04-22.51.45:765][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.11.04-22.51.45:809][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.11.04-22.51.45:855][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.11.04-22.51.45:903][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.11.04-22.51.45:955][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.11.04-22.51.46:008][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.11.04-22.51.46:060][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.11.04-22.51.46:111][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.11.04-22.51.46:206][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.11.04-22.51.46:206][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.11.04-22.51.46:244][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.11.04-22.51.46:336][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.11.04-22.51.46:364][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.11.04-22.51.46:411][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.11.04-22.51.46:458][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.11.04-22.51.46:504][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.11.04-22.51.46:551][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.11.04-22.51.46:551][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.11.04-22.51.47:049][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.11.04-22.51.47:136][  0]LogDerivedDataCache: Loaded boot cache 0.09s 90MB C:/Users/miste/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2017.11.04-22.51.47:136][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/miste/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc
+[2017.11.04-22.51.47:136][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.11.04-22.51.47:136][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.11.04-22.51.47:136][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.11.04-22.51.47:136][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.11.04-22.51.47:151][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.11.04-22.51.47:163][  0]LogDerivedDataCache: Using Local data cache path C:/Users/miste/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.11.04-22.51.47:172][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2017.11.04-22.51.47:172][  0]LogSlate: Using Freetype 2.6.0
+[2017.11.04-22.51.47:172][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.11.04-22.51.47:172][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.11.04-22.51.47:451][  0]LogInit: Selected Device Profile: [Windows]
+[2017.11.04-22.51.47:524][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.11.04-22.51.47:673][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.11.04-22.51.47:717][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.11.04-22.51.47:765][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.11.04-22.51.47:765][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.11.04-22.51.47:765][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.11.04-22.51.48:304][  0]LogNetVersion: CarProject , NetCL: 3452394, EngineNetVer: 2, GameNetVer: 0 (Checksum: 1140275405)
+[2017.11.04-22.51.48:366][  0]LogAssetRegistry: FAssetRegistry took 0.0252 seconds to start up
+[2017.11.04-22.51.48:436][  0]LogPackageLocalizationCache: Processed 4 localized package path(s) for 2 prioritized culture(s) in 0.043388 seconds
+[2017.11.04-22.51.48:441][  0]LogUObjectArray: 34194 objects as part of root set at end of initial load.
+[2017.11.04-22.51.48:441][  0]LogUObjectAllocator: 7260424 out of 0 bytes used by permanent object pool.
+[2017.11.04-22.51.48:441][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.11.04-22.51.48:509][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.11.04-22.51.50:769][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.11.04-22.51.50:817][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.11.04-22.51.51:354][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.11.04-22.51.51:746][  0]SourceControl: Info Source control is disabled
+[2017.11.04-22.51.51:812][  0]SourceControl: Info Source control is disabled
+[2017.11.04-22.51.51:860][  0]SourceControl: Info Source control is disabled
+[2017.11.04-22.51.51:907][  0]SourceControl: Info Source control is disabled
+[2017.11.04-22.51.52:676][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2017.11.04-22.51.53:275][  0]LogEngine: Initializing Engine...
+[2017.11.04-22.51.53:275][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.11.04-22.51.53:464][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.11.04-22.51.53:464][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.11.04-22.51.53:599][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.11.04-22.51.53:612][  0]LogInit: XAudio2 using 'Speaker/Headphone (Realtek High Definition Audio(SST))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.11.04-22.51.54:578][  0]LogInit: FAudioDevice initialized.
+[2017.11.04-22.51.54:674][  0]LogDerivedDataCache: Saved boot cache 0.10s 90MB C:/Users/miste/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2017.11.04-22.51.54:682][  0]LogInit: Texture streaming: Enabled
+[2017.11.04-22.51.54:781][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.11.04-22.51.54:995][  0]LogInit: Transaction tracking system initialized
+[2017.11.04-22.51.55:318][  0]BlueprintLog: New page: Editor Load
+[2017.11.04-22.51.56:304][  0]LocalizationService: Info Localization service is disabled
+[2017.11.04-22.51.57:000][  0]LogConsoleResponse:Display: 
+[2017.11.04-22.51.57:146][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.11.04-22.51.57:146][  0]LogCook:Display: Mobile HDR setting 1
+[2017.11.04-22.51.57:305][  0]LogFileCache: Scanning file cache for directory 'C:/Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/' took 0.01s
+[2017.11.04-22.51.58:178][  0]SourceControl: Info Source control is disabled
+[2017.11.04-22.51.58:241][  0]LogFactory: FactoryCreateFile: PackFactory with PackFactory (0 0 C:/Program Files/Epic Games/UE_4.16/FeaturePacks/StarterContent.upack)
+[2017.11.04-22.51.58:275][  0]LogPackFactory: Finished extracting 8 files (including 0 errors).
+[2017.11.04-22.51.58:287][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Floor_400x400.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Architecture/Floor_400x400.uasset"
+[2017.11.04-22.51.58:314][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Pillar_50x500.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Architecture/Pillar_50x500.uasset"
+[2017.11.04-22.51.58:343][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/SM_AssetPlatform.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Architecture/SM_AssetPlatform.uasset"
+[2017.11.04-22.51.58:359][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x200.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Architecture/Wall_400x200.uasset"
+[2017.11.04-22.51.58:380][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x300.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Architecture/Wall_400x300.uasset"
+[2017.11.04-22.51.58:400][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x400.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Architecture/Wall_400x400.uasset"
+[2017.11.04-22.51.58:422][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_500x500.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Architecture/Wall_500x500.uasset"
+[2017.11.04-22.51.58:441][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x300.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Architecture/Wall_Door_400x300.uasset"
+[2017.11.04-22.51.58:471][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x400.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Architecture/Wall_Door_400x400.uasset"
+[2017.11.04-22.51.58:491][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x300.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Architecture/Wall_Window_400x300.uasset"
+[2017.11.04-22.51.58:511][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x400.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Architecture/Wall_Window_400x400.uasset"
+[2017.11.04-22.51.58:547][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse01.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Audio/Collapse01.uasset"
+[2017.11.04-22.51.58:590][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse02.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Audio/Collapse02.uasset"
+[2017.11.04-22.51.58:606][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse_Cue.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Audio/Collapse_Cue.uasset"
+[2017.11.04-22.51.58:662][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion01.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Audio/Explosion01.uasset"
+[2017.11.04-22.51.58:676][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion02.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Audio/Explosion02.uasset"
+[2017.11.04-22.51.58:694][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion_Cue.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Audio/Explosion_Cue.uasset"
+[2017.11.04-22.51.58:748][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Audio/Fire01.uasset"
+[2017.11.04-22.51.58:774][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01_Cue.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Audio/Fire01_Cue.uasset"
+[2017.11.04-22.51.58:857][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Audio/Fire_Sparks01.uasset"
+[2017.11.04-22.51.58:865][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset"
+[2017.11.04-22.51.58:877][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Audio/Light01.uasset"
+[2017.11.04-22.51.58:883][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01_Cue.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Audio/Light01_Cue.uasset"
+[2017.11.04-22.51.58:929][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Audio/Light02.uasset"
+[2017.11.04-22.51.58:957][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02_Cue.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Audio/Light02_Cue.uasset"
+[2017.11.04-22.51.59:058][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Audio/Smoke01.uasset"
+[2017.11.04-22.51.59:084][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01_Cue.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Audio/Smoke01_Cue.uasset"
+[2017.11.04-22.51.59:159][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Background_Cue.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Audio/Starter_Background_Cue.uasset"
+[2017.11.04-22.51.59:394][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Birds01.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Audio/Starter_Birds01.uasset"
+[2017.11.04-22.51.59:999][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music01.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Audio/Starter_Music01.uasset"
+[2017.11.04-22.52.00:021][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music_Cue.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Audio/Starter_Music_Cue.uasset"
+[2017.11.04-22.52.00:232][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind05.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Audio/Starter_Wind05.uasset"
+[2017.11.04-22.52.00:270][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind06.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Audio/Starter_Wind06.uasset"
+[2017.11.04-22.52.00:346][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Audio/Steam01.uasset"
+[2017.11.04-22.52.00:438][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01_Cue.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Audio/Steam01_Cue.uasset"
+[2017.11.04-22.52.00:472][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset"
+[2017.11.04-22.52.00:490][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset"
+[2017.11.04-22.52.00:510][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset"
+[2017.11.04-22.52.00:529][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset"
+[2017.11.04-22.52.00:545][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset"
+[2017.11.04-22.52.00:562][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset"
+[2017.11.04-22.52.00:594][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset"
+[2017.11.04-22.52.00:635][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/BP_LightStudio.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Blueprints/BP_LightStudio.uasset"
+[2017.11.04-22.52.00:649][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset"
+[2017.11.04-22.52.00:667][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset"
+[2017.11.04-22.52.00:702][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset"
+[2017.11.04-22.52.00:743][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset"
+[2017.11.04-22.52.00:759][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset"
+[2017.11.04-22.52.00:900][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/Skybox.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Blueprints/Assets/Skybox.uasset"
+[2017.11.04-22.52.00:955][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset"
+[2017.11.04-22.52.00:982][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset"
+[2017.11.04-22.52.05:978][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset"
+[2017.11.04-22.52.06:098][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Advanced_Lighting.umap" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Maps/Advanced_Lighting.umap"
+[2017.11.04-22.52.06:119][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Advanced_Lighting_BuiltData.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Maps/Advanced_Lighting_BuiltData.uasset"
+[2017.11.04-22.52.06:238][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Minimal_Default.umap" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Maps/Minimal_Default.umap"
+[2017.11.04-22.52.06:322][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset"
+[2017.11.04-22.52.06:851][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/StarterMap.umap" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Maps/StarterMap.umap"
+[2017.11.04-22.52.07:834][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/StarterMap_BuiltData.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Maps/StarterMap_BuiltData.uasset"
+[2017.11.04-22.52.07:881][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_AssetPlatform.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_AssetPlatform.uasset"
+[2017.11.04-22.52.07:896][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Floor.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Basic_Floor.uasset"
+[2017.11.04-22.52.07:910][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Wall.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Basic_Wall.uasset"
+[2017.11.04-22.52.07:920][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset"
+[2017.11.04-22.52.07:936][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_New.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Brick_Clay_New.uasset"
+[2017.11.04-22.52.07:955][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset"
+[2017.11.04-22.52.07:965][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset"
+[2017.11.04-22.52.07:987][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset"
+[2017.11.04-22.52.07:997][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset"
+[2017.11.04-22.52.08:013][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset"
+[2017.11.04-22.52.08:038][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset"
+[2017.11.04-22.52.08:052][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset"
+[2017.11.04-22.52.08:070][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset"
+[2017.11.04-22.52.08:086][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Grime.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Concrete_Grime.uasset"
+[2017.11.04-22.52.08:106][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Panels.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Concrete_Panels.uasset"
+[2017.11.04-22.52.08:117][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Poured.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Concrete_Poured.uasset"
+[2017.11.04-22.52.08:139][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Tiles.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Concrete_Tiles.uasset"
+[2017.11.04-22.52.08:150][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Glass.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Glass.uasset"
+[2017.11.04-22.52.08:161][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Grass.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Ground_Grass.uasset"
+[2017.11.04-22.52.08:180][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Gravel.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Ground_Gravel.uasset"
+[2017.11.04-22.52.08:202][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Moss.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Ground_Moss.uasset"
+[2017.11.04-22.52.08:225][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset"
+[2017.11.04-22.52.08:244][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset"
+[2017.11.04-22.52.08:265][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Chrome.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Metal_Chrome.uasset"
+[2017.11.04-22.52.08:285][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Copper.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Metal_Copper.uasset"
+[2017.11.04-22.52.08:416][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Gold.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Metal_Gold.uasset"
+[2017.11.04-22.52.08:547][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Rust.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Metal_Rust.uasset"
+[2017.11.04-22.52.08:558][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Steel.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Metal_Steel.uasset"
+[2017.11.04-22.52.08:708][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Basalt.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Rock_Basalt.uasset"
+[2017.11.04-22.52.08:935][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset"
+[2017.11.04-22.52.08:954][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Sandstone.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Rock_Sandstone.uasset"
+[2017.11.04-22.52.08:995][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Slate.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Rock_Slate.uasset"
+[2017.11.04-22.52.09:010][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset"
+[2017.11.04-22.52.09:047][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset"
+[2017.11.04-22.52.09:093][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset"
+[2017.11.04-22.52.09:100][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Panel.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Tech_Panel.uasset"
+[2017.11.04-22.52.09:111][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Lake.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Water_Lake.uasset"
+[2017.11.04-22.52.09:148][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Ocean.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Water_Ocean.uasset"
+[2017.11.04-22.52.09:165][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset"
+[2017.11.04-22.52.09:183][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset"
+[2017.11.04-22.52.09:200][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Oak.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Wood_Oak.uasset"
+[2017.11.04-22.52.09:215][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Pine.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Wood_Pine.uasset"
+[2017.11.04-22.52.09:225][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Walnut.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Materials/M_Wood_Walnut.uasset"
+[2017.11.04-22.52.09:238][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Ambient_Dust.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Particles/P_Ambient_Dust.uasset"
+[2017.11.04-22.52.09:255][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Explosion.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Particles/P_Explosion.uasset"
+[2017.11.04-22.52.09:274][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Fire.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Particles/P_Fire.uasset"
+[2017.11.04-22.52.09:289][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Smoke.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Particles/P_Smoke.uasset"
+[2017.11.04-22.52.09:304][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Sparks.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Particles/P_Sparks.uasset"
+[2017.11.04-22.52.09:323][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Steam_Lit.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Particles/P_Steam_Lit.uasset"
+[2017.11.04-22.52.09:341][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Burst.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Particles/Materials/M_Burst.uasset"
+[2017.11.04-22.52.09:357][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset"
+[2017.11.04-22.52.09:372][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset"
+[2017.11.04-22.52.09:389][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset"
+[2017.11.04-22.52.09:399][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/m_flare_01.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Particles/Materials/m_flare_01.uasset"
+[2017.11.04-22.52.09:405][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset"
+[2017.11.04-22.52.09:419][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset"
+[2017.11.04-22.52.09:435][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset"
+[2017.11.04-22.52.09:449][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset"
+[2017.11.04-22.52.09:455][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Spark.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Particles/Materials/M_Spark.uasset"
+[2017.11.04-22.52.09:477][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/MaterialSphere.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Props/MaterialSphere.uasset"
+[2017.11.04-22.52.09:491][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Bush.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Props/SM_Bush.uasset"
+[2017.11.04-22.52.09:506][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Chair.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Props/SM_Chair.uasset"
+[2017.11.04-22.52.09:521][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_CornerFrame.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Props/SM_CornerFrame.uasset"
+[2017.11.04-22.52.09:541][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Couch.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Props/SM_Couch.uasset"
+[2017.11.04-22.52.09:554][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Door.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Props/SM_Door.uasset"
+[2017.11.04-22.52.09:574][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_DoorFrame.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Props/SM_DoorFrame.uasset"
+[2017.11.04-22.52.09:587][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_GlassWindow.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Props/SM_GlassWindow.uasset"
+[2017.11.04-22.52.09:605][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset"
+[2017.11.04-22.52.09:611][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Wall.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Props/SM_Lamp_Wall.uasset"
+[2017.11.04-22.52.09:653][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset"
+[2017.11.04-22.52.09:788][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Props/SM_PillarFrame.uasset"
+[2017.11.04-22.52.09:887][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame300.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Props/SM_PillarFrame300.uasset"
+[2017.11.04-22.52.10:098][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Rock.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Props/SM_Rock.uasset"
+[2017.11.04-22.52.10:119][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Shelf.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Props/SM_Shelf.uasset"
+[2017.11.04-22.52.10:138][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Stairs.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Props/SM_Stairs.uasset"
+[2017.11.04-22.52.10:167][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Statue.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Props/SM_Statue.uasset"
+[2017.11.04-22.52.10:189][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_TableRound.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Props/SM_TableRound.uasset"
+[2017.11.04-22.52.10:204][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_WindowFrame.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Props/SM_WindowFrame.uasset"
+[2017.11.04-22.52.10:221][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Bush.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Props/Materials/M_Bush.uasset"
+[2017.11.04-22.52.10:236][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Chair.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Props/Materials/M_Chair.uasset"
+[2017.11.04-22.52.10:250][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Door.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Props/Materials/M_Door.uasset"
+[2017.11.04-22.52.10:270][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Frame.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Props/Materials/M_Frame.uasset"
+[2017.11.04-22.52.10:288][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Lamp.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Props/Materials/M_Lamp.uasset"
+[2017.11.04-22.52.10:299][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset"
+[2017.11.04-22.52.10:314][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset"
+[2017.11.04-22.52.10:330][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Rock.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Props/Materials/M_Rock.uasset"
+[2017.11.04-22.52.10:346][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Shelf.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Props/Materials/M_Shelf.uasset"
+[2017.11.04-22.52.10:361][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Statue.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Props/Materials/M_Statue.uasset"
+[2017.11.04-22.52.10:380][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_StatueGlass.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Props/Materials/M_StatueGlass.uasset"
+[2017.11.04-22.52.10:386][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_TableRound.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Props/Materials/M_TableRound.uasset"
+[2017.11.04-22.52.10:391][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cone.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Shapes/Shape_Cone.uasset"
+[2017.11.04-22.52.10:411][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cube.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Shapes/Shape_Cube.uasset"
+[2017.11.04-22.52.10:418][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cylinder.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Shapes/Shape_Cylinder.uasset"
+[2017.11.04-22.52.10:432][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset"
+[2017.11.04-22.52.10:437][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Shapes/Shape_Pipe.uasset"
+[2017.11.04-22.52.10:455][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_180.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Shapes/Shape_Pipe_180.uasset"
+[2017.11.04-22.52.10:461][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_90.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Shapes/Shape_Pipe_90.uasset"
+[2017.11.04-22.52.10:475][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Plane.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Shapes/Shape_Plane.uasset"
+[2017.11.04-22.52.10:486][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset"
+[2017.11.04-22.52.10:544][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Sphere.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Shapes/Shape_Sphere.uasset"
+[2017.11.04-22.52.10:587][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Torus.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Shapes/Shape_Torus.uasset"
+[2017.11.04-22.52.10:600][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Shapes/Shape_Trim.uasset"
+[2017.11.04-22.52.10:617][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset"
+[2017.11.04-22.52.10:632][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset"
+[2017.11.04-22.52.10:654][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_TriPyramid.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Shapes/Shape_TriPyramid.uasset"
+[2017.11.04-22.52.10:670][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Tube.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Shapes/Shape_Tube.uasset"
+[2017.11.04-22.52.10:676][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_A.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Shapes/Shape_Wedge_A.uasset"
+[2017.11.04-22.52.10:689][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_B.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Shapes/Shape_Wedge_B.uasset"
+[2017.11.04-22.52.10:701][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_WideCapsule.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Shapes/Shape_WideCapsule.uasset"
+[2017.11.04-22.52.10:978][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset"
+[2017.11.04-22.52.11:074][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset"
+[2017.11.04-22.52.11:254][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset"
+[2017.11.04-22.52.12:218][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset"
+[2017.11.04-22.52.12:734][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset"
+[2017.11.04-22.52.12:802][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset"
+[2017.11.04-22.52.12:934][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset"
+[2017.11.04-22.52.13:002][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset"
+[2017.11.04-22.52.13:333][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset"
+[2017.11.04-22.52.13:400][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset"
+[2017.11.04-22.52.13:460][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset"
+[2017.11.04-22.52.13:514][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset"
+[2017.11.04-22.52.13:590][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset"
+[2017.11.04-22.52.13:601][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Burst_M.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Burst_M.uasset"
+[2017.11.04-22.52.13:615][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_D.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Bush_D.uasset"
+[2017.11.04-22.52.13:635][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Bush_N.uasset"
+[2017.11.04-22.52.13:653][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset"
+[2017.11.04-22.52.13:674][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset"
+[2017.11.04-22.52.13:691][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_M.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Chair_M.uasset"
+[2017.11.04-22.52.13:716][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Chair_N.uasset"
+[2017.11.04-22.52.13:737][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Checker_Noise_M.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Checker_Noise_M.uasset"
+[2017.11.04-22.52.14:026][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset"
+[2017.11.04-22.52.14:069][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset"
+[2017.11.04-22.52.14:345][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset"
+[2017.11.04-22.52.14:383][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset"
+[2017.11.04-22.52.14:411][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset"
+[2017.11.04-22.52.14:489][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset"
+[2017.11.04-22.52.14:537][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset"
+[2017.11.04-22.52.14:656][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset"
+[2017.11.04-22.52.14:753][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset"
+[2017.11.04-22.52.14:889][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset"
+[2017.11.04-22.52.14:957][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset"
+[2017.11.04-22.52.15:073][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset"
+[2017.11.04-22.52.15:323][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset"
+[2017.11.04-22.52.15:539][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset"
+[2017.11.04-22.52.15:938][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset"
+[2017.11.04-22.52.16:096][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset"
+[2017.11.04-22.52.16:116][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset"
+[2017.11.04-22.52.16:171][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset"
+[2017.11.04-22.52.16:191][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_M.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Door_M.uasset"
+[2017.11.04-22.52.16:217][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Door_N.uasset"
+[2017.11.04-22.52.16:226][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Dust_Particle_D.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Dust_Particle_D.uasset"
+[2017.11.04-22.52.16:269][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Explosion_SubUV.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Explosion_SubUV.uasset"
+[2017.11.04-22.52.16:289][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_SubUV.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Fire_SubUV.uasset"
+[2017.11.04-22.52.16:309][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset"
+[2017.11.04-22.52.16:322][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_M.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Frame_M.uasset"
+[2017.11.04-22.52.16:349][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Frame_N.uasset"
+[2017.11.04-22.52.16:363][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Gradinet_01.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Gradinet_01.uasset"
+[2017.11.04-22.52.16:474][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_D.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Ground_Grass_D.uasset"
+[2017.11.04-22.52.16:852][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Ground_Grass_N.uasset"
+[2017.11.04-22.52.17:087][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset"
+[2017.11.04-22.52.17:286][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset"
+[2017.11.04-22.52.17:702][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_ground_Moss_D.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_ground_Moss_D.uasset"
+[2017.11.04-22.52.17:846][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Moss_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Ground_Moss_N.uasset"
+[2017.11.04-22.52.18:441][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_M.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Lamp_M.uasset"
+[2017.11.04-22.52.18:582][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Lamp_N.uasset"
+[2017.11.04-22.52.18:740][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_MacroVariation.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_MacroVariation.uasset"
+[2017.11.04-22.52.18:886][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset"
+[2017.11.04-22.52.18:979][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Copper_D.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Metal_Copper_D.uasset"
+[2017.11.04-22.52.19:069][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_D.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Metal_Gold_D.uasset"
+[2017.11.04-22.52.19:113][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Metal_Gold_N.uasset"
+[2017.11.04-22.52.19:422][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_D.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Metal_Rust_D.uasset"
+[2017.11.04-22.52.19:750][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Metal_Rust_N.uasset"
+[2017.11.04-22.52.19:901][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_D.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Metal_Steel_D.uasset"
+[2017.11.04-22.52.20:021][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Metal_Steel_N.uasset"
+[2017.11.04-22.52.20:124][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset"
+[2017.11.04-22.52.20:192][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_M.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_RockMesh_M.uasset"
+[2017.11.04-22.52.20:257][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_RockMesh_N.uasset"
+[2017.11.04-22.52.20:386][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset"
+[2017.11.04-22.52.20:473][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset"
+[2017.11.04-22.52.20:551][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset"
+[2017.11.04-22.52.21:047][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset"
+[2017.11.04-22.52.21:296][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset"
+[2017.11.04-22.52.21:526][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_D.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Rock_Slate_D.uasset"
+[2017.11.04-22.52.21:656][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Rock_Slate_N.uasset"
+[2017.11.04-22.52.21:785][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset"
+[2017.11.04-22.52.21:810][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_M.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Shelf_M.uasset"
+[2017.11.04-22.52.21:849][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Shelf_N.uasset"
+[2017.11.04-22.52.21:867][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Single_Tile_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Single_Tile_N.uasset"
+[2017.11.04-22.52.22:026][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_SubUV.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Smoke_SubUV.uasset"
+[2017.11.04-22.52.22:096][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset"
+[2017.11.04-22.52.22:314][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Spark_Core.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Spark_Core.uasset"
+[2017.11.04-22.52.22:539][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_M.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Statue_M.uasset"
+[2017.11.04-22.52.22:875][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Statue_N.uasset"
+[2017.11.04-22.52.22:905][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_M.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_TableRound_M.uasset"
+[2017.11.04-22.52.22:943][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_TableRound_N.uasset"
+[2017.11.04-22.52.22:962][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_M.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Tech_Dot_M.uasset"
+[2017.11.04-22.52.23:060][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Tech_Dot_N.uasset"
+[2017.11.04-22.52.23:079][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset"
+[2017.11.04-22.52.23:105][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset"
+[2017.11.04-22.52.23:129][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_M.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Tech_Panel_M.uasset"
+[2017.11.04-22.52.23:162][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Tech_Panel_N.uasset"
+[2017.11.04-22.52.23:200][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_M.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Water_M.uasset"
+[2017.11.04-22.52.23:234][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Water_N.uasset"
+[2017.11.04-22.52.23:335][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset"
+[2017.11.04-22.52.23:502][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset"
+[2017.11.04-22.52.23:664][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset"
+[2017.11.04-22.52.23:964][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_D.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Wood_Oak_D.uasset"
+[2017.11.04-22.52.24:294][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Wood_Oak_N.uasset"
+[2017.11.04-22.52.24:467][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_D.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Wood_Pine_D.uasset"
+[2017.11.04-22.52.24:525][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Wood_Pine_N.uasset"
+[2017.11.04-22.52.24:642][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset"
+[2017.11.04-22.52.25:107][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset" to "../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset"
+[2017.11.04-22.52.25:983][  0]LogRenderer: Reallocating scene render targets to support 256x256 NumSamples 1 (Frame:1).
+[2017.11.04-22.52.26:570][  0]LogSavePackage: Save=337.82ms
+[2017.11.04-22.52.26:570][  0]LogSavePackage: Moving '../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Saved/Floor_400x400D5A4266F49682EDC2BD126A2FD4A1BAB.tmp' to '../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Architecture/Floor_400x400.uasset'
+[2017.11.04-22.52.26:579][  0]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/StarterContent/Architecture/Floor_400x400.uasset
+[2017.11.04-22.52.26:580][  0]LogFeaturePack:Warning: Inserted 1 feature packs
+[2017.11.04-22.52.26:582][  0]Cmd: MAP LOAD FILE="../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/VehicleBP/Maps/VehicleExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.11.04-22.52.26:583][  0]LightingResults: New page: Lighting Build
+[2017.11.04-22.52.26:633][  0]MapCheck: New page: Map Check
+[2017.11.04-22.52.26:633][  0]LightingResults: New page: Lighting Build
+[2017.11.04-22.52.28:128][  0]LogAIModule: Creating AISystem for world VehicleExampleMap
+[2017.11.04-22.52.28:302][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.11.04-22.52.28:360][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.11.04-22.52.28:408][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 47.051ms to complete.
+[2017.11.04-22.52.28:408][  0]LogFileHelpers: Loading map 'VehicleExampleMap' took 1.825
+[2017.11.04-22.52.28:479][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.11.04-22.52.28:479][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.11.04-22.52.28:560][  0]LogCollectionManager: Loaded 0 collections in 0.003990 seconds
+[2017.11.04-22.52.28:644][  0]LogFileCache: Scanning file cache for directory 'C:/Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Saved/Collections/' took 0.01s
+[2017.11.04-22.52.28:644][  0]LogFileCache: Scanning file cache for directory 'C:/Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/Developers/miste/Collections/' took 0.01s
+[2017.11.04-22.52.28:644][  0]LogFileCache: Scanning file cache for directory 'C:/Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/Collections/' took 0.01s
+[2017.11.04-22.52.28:644][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
+[2017.11.04-22.52.28:653][  0]LogContentBrowser: Native class hierarchy populated in 0.0083 seconds. Added 2331 classes and 494 folders.
+[2017.11.04-22.52.28:726][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2017.11.04-22.52.28:816][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2017.11.04-22.52.28:865][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2017.11.04-22.52.28:953][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.11.04-22.52.28:961][  0]LogSlate: Took 0.000199 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.11.04-22.52.28:963][  0]LogSlate: Took 0.000159 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.11.04-22.52.28:967][  0]LogSlate: Took 0.000164 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.11.04-22.52.29:005][  0]LogRenderer: Reallocating scene render targets to support 1208x576 NumSamples 1 (Frame:1).
+[2017.11.04-22.52.29:061][  0]LogSlate: Took 0.000151 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.11.04-22.52.29:117][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.11.04-22.52.29:190][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2017.11.04-22.52.29:190][  0]LogLoad: (Engine Initialization) Total time: 47.61 seconds
+[2017.11.04-22.52.29:190][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.13 seconds
+[2017.11.04-22.52.29:190][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
+[2017.11.04-22.52.29:205][  0]LogOcInput: OculusInput pre-init called
+[2017.11.04-22.52.29:206][  0]LogRawInputWindows:Warning: Found device 0 devices
+[2017.11.04-22.52.29:206][  0]LogRawInputWindows:Warning: Found device 0 devices
+[2017.11.04-22.52.29:206][  0]LogRawInputWindows:Warning: Device was registered succesfully but not connected (Usage:4 UsagePage:1
+[2017.11.04-22.52.29:206][  0]LogRawInputWindows:Warning: Found device 1 devices
+[2017.11.04-22.52.29:206][  0]LogRawInputWindows:Warning: Device was registered succesfully but not connected (Usage:5 UsagePage:1
+[2017.11.04-22.52.29:206][  0]LogHMD: Starting GearVRController plugin
+[2017.11.04-22.52.29:377][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.11.04-22.52.29:412][  1]LogAssetRegistry: Asset discovery search completed in 41.0675 seconds
+[2017.11.04-22.52.29:414][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2017.11.04-22.52.29:414][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000046 seconds (updated 0 objects)
+[2017.11.04-22.52.36:980][433]LogTemp: Repeting last play command: Selected Viewport
+[2017.11.04-22.52.37:059][433]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VehicleBP/Maps/VehicleExampleMap.VehicleExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleBP/Maps/VehicleExampleMap.VehicleExampleMap:PersistentLevel.VehicleExampleMap' with GeneratedClass '/Game/VehicleBP/Maps/VehicleExampleMap.VehicleExampleMap_C' with ClassGeneratedBy '/Game/VehicleBP/Maps/VehicleExampleMap.VehicleExampleMap:PersistentLevel.VehicleExampleMap'
+[2017.11.04-22.52.37:059][433]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.11.04-22.52.37:059][433]PIE: New page: PIE session: VehicleExampleMap (Nov 4, 2017, 8:52:37 AM)
+[2017.11.04-22.52.37:059][433]LogPlayLevel: Creating play world package: /Game/VehicleBP/Maps/UEDPIE_0_VehicleExampleMap
+[2017.11.04-22.52.37:087][433]LogPlayLevel: PIE: StaticDuplicateObject took: (0.027507s)
+[2017.11.04-22.52.37:087][433]LogAIModule: Creating AISystem for world VehicleExampleMap
+[2017.11.04-22.52.37:088][433]LogPlayLevel: PIE: World Init took: (0.000939s)
+[2017.11.04-22.52.37:088][433]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleBP/Maps/VehicleExampleMap.VehicleExampleMap to /Game/VehicleBP/Maps/UEDPIE_0_VehicleExampleMap.VehicleExampleMap (0.028726s)
+[2017.11.04-22.52.37:109][433]LogInit: XAudio2 using 'Speaker/Headphone (Realtek High Definition Audio(SST))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.11.04-22.52.37:119][433]LogInit: FAudioDevice initialized.
+[2017.11.04-22.52.37:162][433]LogLoad: Game class is 'VehicleGameMode_C'
+[2017.11.04-22.52.37:180][433]LogWorld: Bringing World /Game/VehicleBP/Maps/UEDPIE_0_VehicleExampleMap.VehicleExampleMap up for play (max tick rate 0) at 2017.11.04-15.52.37
+[2017.11.04-22.52.37:180][433]LogWorld: Bringing up level for play took: 0.016456
+[2017.11.04-22.52.37:224][433]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0005 seconds. Added 11 classes and 0 folders.
+[2017.11.04-22.52.37:224][433]PIE: Info Play in editor start time for /Game/VehicleBP/Maps/UEDPIE_0_VehicleExampleMap 0.042
+[2017.11.04-22.52.37:224][433]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VehicleBP/Maps/VehicleExampleMap.VehicleExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleBP/Maps/VehicleExampleMap.VehicleExampleMap:PersistentLevel.VehicleExampleMap' with GeneratedClass '/Game/VehicleBP/Maps/VehicleExampleMap.VehicleExampleMap_C' with ClassGeneratedBy '/Game/VehicleBP/Maps/VehicleExampleMap.VehicleExampleMap:PersistentLevel.VehicleExampleMap'
+[2017.11.04-22.53.26:753][426]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VehicleBP/Maps/VehicleExampleMap.VehicleExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleBP/Maps/VehicleExampleMap.VehicleExampleMap:PersistentLevel.VehicleExampleMap' with GeneratedClass '/Game/VehicleBP/Maps/VehicleExampleMap.VehicleExampleMap_C' with ClassGeneratedBy '/Game/VehicleBP/Maps/VehicleExampleMap.VehicleExampleMap:PersistentLevel.VehicleExampleMap'
+[2017.11.04-22.53.26:805][426]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VehicleBP/Maps/VehicleExampleMap.VehicleExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleBP/Maps/VehicleExampleMap.VehicleExampleMap:PersistentLevel.VehicleExampleMap' with GeneratedClass '/Game/VehicleBP/Maps/VehicleExampleMap.VehicleExampleMap_C' with ClassGeneratedBy '/Game/VehicleBP/Maps/VehicleExampleMap.VehicleExampleMap:PersistentLevel.VehicleExampleMap'
+[2017.11.04-22.53.35:684][631]LogSlate: Took 0.000120 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.11.04-22.53.36:217][631]LogSlate: Took 0.000133 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.11.04-22.53.36:475][631]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0008 seconds. Added 112 classes and 0 folders.
+[2017.11.04-22.53.37:654][631]LogSlate: Took 0.009074 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.11.04-22.53.41:393][747]LogSlate: Took 0.025039 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.11.04-22.56.11:856][170]LogEditorTransaction: Undo Create Pin Link
+[2017.11.04-22.56.12:024][170]LogSlate: Took 0.000158 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.11.04-22.56.14:389][186]LogEditorTransaction: Undo Create Pin Link
+[2017.11.04-22.56.45:034][881]LogRenderer: Reallocating scene render targets to support 1252x900 NumSamples 1 (Frame:1).
+[2017.11.04-22.59.54:403][545]LogTemp: Repeting last play command: Selected Viewport
+[2017.11.04-22.59.54:417][545]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VehicleBP/Maps/VehicleExampleMap.VehicleExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleBP/Maps/VehicleExampleMap.VehicleExampleMap:PersistentLevel.VehicleExampleMap' with GeneratedClass '/Game/VehicleBP/Maps/VehicleExampleMap.VehicleExampleMap_C' with ClassGeneratedBy '/Game/VehicleBP/Maps/VehicleExampleMap.VehicleExampleMap:PersistentLevel.VehicleExampleMap'
+[2017.11.04-22.59.54:417][545]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.11.04-22.59.54:417][545]PIE: New page: PIE session: VehicleExampleMap (Nov 4, 2017, 8:59:54 AM)
+[2017.11.04-22.59.54:417][545]LogPlayLevel: Creating play world package: /Game/VehicleBP/Maps/UEDPIE_0_VehicleExampleMap
+[2017.11.04-22.59.54:437][545]LogPlayLevel: PIE: StaticDuplicateObject took: (0.020209s)
+[2017.11.04-22.59.54:438][545]LogAIModule: Creating AISystem for world VehicleExampleMap
+[2017.11.04-22.59.54:438][545]LogPlayLevel: PIE: World Init took: (0.000865s)
+[2017.11.04-22.59.54:438][545]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleBP/Maps/VehicleExampleMap.VehicleExampleMap to /Game/VehicleBP/Maps/UEDPIE_0_VehicleExampleMap.VehicleExampleMap (0.021370s)
+[2017.11.04-22.59.54:567][545]LogInit: XAudio2 using 'Speaker/Headphone (Realtek High Definition Audio(SST))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.11.04-22.59.54:579][545]LogInit: FAudioDevice initialized.
+[2017.11.04-22.59.54:609][545]LogLoad: Game class is 'VehicleGameMode_C'
+[2017.11.04-22.59.54:613][545]LogWorld: Bringing World /Game/VehicleBP/Maps/UEDPIE_0_VehicleExampleMap.VehicleExampleMap up for play (max tick rate 60) at 2017.11.04-15.59.54
+[2017.11.04-22.59.54:613][545]LogWorld: Bringing up level for play took: 0.002528
+[2017.11.04-22.59.54:614][545]PIE: Info Play in editor start time for /Game/VehicleBP/Maps/UEDPIE_0_VehicleExampleMap -0.569
+[2017.11.04-22.59.54:614][545]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VehicleBP/Maps/VehicleExampleMap.VehicleExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleBP/Maps/VehicleExampleMap.VehicleExampleMap:PersistentLevel.VehicleExampleMap' with GeneratedClass '/Game/VehicleBP/Maps/VehicleExampleMap.VehicleExampleMap_C' with ClassGeneratedBy '/Game/VehicleBP/Maps/VehicleExampleMap.VehicleExampleMap:PersistentLevel.VehicleExampleMap'
+[2017.11.04-23.00.29:582][981]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VehicleBP/Maps/VehicleExampleMap.VehicleExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleBP/Maps/VehicleExampleMap.VehicleExampleMap:PersistentLevel.VehicleExampleMap' with GeneratedClass '/Game/VehicleBP/Maps/VehicleExampleMap.VehicleExampleMap_C' with ClassGeneratedBy '/Game/VehicleBP/Maps/VehicleExampleMap.VehicleExampleMap:PersistentLevel.VehicleExampleMap'
+[2017.11.04-23.00.29:634][981]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VehicleBP/Maps/VehicleExampleMap.VehicleExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleBP/Maps/VehicleExampleMap.VehicleExampleMap:PersistentLevel.VehicleExampleMap' with GeneratedClass '/Game/VehicleBP/Maps/VehicleExampleMap.VehicleExampleMap_C' with ClassGeneratedBy '/Game/VehicleBP/Maps/VehicleExampleMap.VehicleExampleMap:PersistentLevel.VehicleExampleMap'
+[2017.11.04-23.00.34:690][131]Cmd: QUIT_EDITOR
+[2017.11.04-23.00.35:174][131]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.11.04-23.00.35:174][131]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.11.04-23.00.35:229][131]LogExit: Preparing to exit.
+[2017.11.04-23.00.36:212][131]LogDirectoryWatcher: A directory notification for 'C:/Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/' was aborted.
+[2017.11.04-23.00.36:245][131]LogExit: Editor shut down
+[2017.11.04-23.00.36:249][131]LogExit: Transaction tracking system shut down
+[2017.11.04-23.00.36:326][131]LogObj: Freed 0b from 0 cluster array pools.
+[2017.11.04-23.00.36:327][131]LogExit: Object subsystem successfully closed.
+[2017.11.04-23.00.36:340][131]LogD3D11RHI: Shutdown
+[2017.11.04-23.00.36:340][131]LogD3D11RHI: CleanupD3DDevice
+[2017.11.04-23.00.36:430][131]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.11.04-23.00.36:474][131]LogModuleManager: Shutting down and abandoning module BlueprintGraph (532)
+[2017.11.04-23.00.36:474][131]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (530)
+[2017.11.04-23.00.36:476][131]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (528)
+[2017.11.04-23.00.36:476][131]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (526)
+[2017.11.04-23.00.36:476][131]LogModuleManager: Shutting down and abandoning module CrashTracker (524)
+[2017.11.04-23.00.36:476][131]LogModuleManager: Shutting down and abandoning module SceneOutliner (522)
+[2017.11.04-23.00.36:476][131]LogModuleManager: Shutting down and abandoning module AddContentDialog (520)
+[2017.11.04-23.00.36:476][131]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.16/FeaturePacks/' was aborted.
+[2017.11.04-23.00.36:480][131]LogModuleManager: Shutting down and abandoning module WidgetCarousel (519)
+[2017.11.04-23.00.36:480][131]LogModuleManager: Shutting down and abandoning module EditorWidgets (516)
+[2017.11.04-23.00.36:480][131]LogModuleManager: Shutting down and abandoning module CollectionManager (514)
+[2017.11.04-23.00.36:480][131]LogDirectoryWatcher: A directory notification for 'C:/Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/Collections/' was aborted.
+[2017.11.04-23.00.36:481][131]LogDirectoryWatcher: A directory notification for 'C:/Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/Developers/miste/Collections/' was aborted.
+[2017.11.04-23.00.36:481][131]LogDirectoryWatcher: A directory notification for 'C:/Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Saved/Collections/' was aborted.
+[2017.11.04-23.00.36:481][131]LogModuleManager: Shutting down and abandoning module StatsViewer (512)
+[2017.11.04-23.00.36:481][131]LogModuleManager: Shutting down and abandoning module FoliageEdit (510)
+[2017.11.04-23.00.36:481][131]LogModuleManager: Shutting down and abandoning module LandscapeEditor (508)
+[2017.11.04-23.00.36:481][131]LogModuleManager: Shutting down and abandoning module MeshPaintMode (506)
+[2017.11.04-23.00.36:481][131]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (504)
+[2017.11.04-23.00.36:481][131]LogModuleManager: Shutting down and abandoning module ActorPickerMode (502)
+[2017.11.04-23.00.36:481][131]LogModuleManager: Shutting down and abandoning module GeometryMode (500)
+[2017.11.04-23.00.36:481][131]LogModuleManager: Shutting down and abandoning module TextureAlignMode (498)
+[2017.11.04-23.00.36:482][131]LogModuleManager: Shutting down and abandoning module BspMode (496)
+[2017.11.04-23.00.36:482][131]LogModuleManager: Shutting down and abandoning module HardwareSurvey (494)
+[2017.11.04-23.00.36:482][131]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (492)
+[2017.11.04-23.00.36:482][131]LogModuleManager: Shutting down and abandoning module AutomationWorker (490)
+[2017.11.04-23.00.36:482][131]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (488)
+[2017.11.04-23.00.36:482][131]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (486)
+[2017.11.04-23.00.36:482][131]LogModuleManager: Shutting down and abandoning module PlacementMode (485)
+[2017.11.04-23.00.36:482][131]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (482)
+[2017.11.04-23.00.36:482][131]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (480)
+[2017.11.04-23.00.36:482][131]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (478)
+[2017.11.04-23.00.36:482][131]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (476)
+[2017.11.04-23.00.36:482][131]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (474)
+[2017.11.04-23.00.36:482][131]LogModuleManager: Shutting down and abandoning module Media (473)
+[2017.11.04-23.00.36:482][131]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (470)
+[2017.11.04-23.00.36:483][131]LogModuleManager: Shutting down and abandoning module CharacterAI (468)
+[2017.11.04-23.00.36:483][131]LogModuleManager: Shutting down and abandoning module AudioCapture (466)
+[2017.11.04-23.00.36:483][131]LogModuleManager: Shutting down and abandoning module SequenceRecorder (465)
+[2017.11.04-23.00.36:483][131]LogModuleManager: Shutting down and abandoning module SmartSnapping (462)
+[2017.11.04-23.00.36:483][131]LogModuleManager: Shutting down and abandoning module SessionServices (460)
+[2017.11.04-23.00.36:483][131]LogModuleManager: Shutting down and abandoning module ViewportSnapping (458)
+[2017.11.04-23.00.36:483][131]LogModuleManager: Shutting down and abandoning module ViewportInteraction (456)
+[2017.11.04-23.00.36:483][131]LogModuleManager: Shutting down and abandoning module ClothPainter (454)
+[2017.11.04-23.00.36:483][131]LogModuleManager: Shutting down and abandoning module LogVisualizer (452)
+[2017.11.04-23.00.36:483][131]LogModuleManager: Shutting down and abandoning module IntroTutorials (450)
+[2017.11.04-23.00.36:483][131]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (449)
+[2017.11.04-23.00.36:484][131]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (446)
+[2017.11.04-23.00.36:484][131]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (444)
+[2017.11.04-23.00.36:484][131]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (442)
+[2017.11.04-23.00.36:484][131]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (440)
+[2017.11.04-23.00.36:484][131]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (439)
+[2017.11.04-23.00.36:871][131]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (436)
+[2017.11.04-23.00.36:871][131]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (434)
+[2017.11.04-23.00.36:871][131]LogModuleManager: Shutting down and abandoning module InputBindingEditor (432)
+[2017.11.04-23.00.36:871][131]LogModuleManager: Shutting down and abandoning module MergeActors (430)
+[2017.11.04-23.00.36:871][131]LogModuleManager: Shutting down and abandoning module SizeMap (428)
+[2017.11.04-23.00.36:871][131]LogModuleManager: Shutting down and abandoning module TreeMap (426)
+[2017.11.04-23.00.36:871][131]LogModuleManager: Shutting down and abandoning module ReferenceViewer (424)
+[2017.11.04-23.00.36:871][131]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (422)
+[2017.11.04-23.00.36:871][131]LogModuleManager: Shutting down and abandoning module LocalizationService (421)
+[2017.11.04-23.00.36:871][131]LogModuleManager: Shutting down and abandoning module HardwareTargeting (418)
+[2017.11.04-23.00.36:871][131]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (416)
+[2017.11.04-23.00.36:871][131]LogModuleManager: Shutting down and abandoning module UndoHistory (414)
+[2017.11.04-23.00.36:871][131]LogModuleManager: Shutting down and abandoning module UserFeedback (412)
+[2017.11.04-23.00.36:871][131]LogModuleManager: Shutting down and abandoning module XmlParser (410)
+[2017.11.04-23.00.36:871][131]LogModuleManager: Shutting down and abandoning module Blutility (408)
+[2017.11.04-23.00.36:871][131]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (406)
+[2017.11.04-23.00.36:872][131]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (405)
+[2017.11.04-23.00.36:872][131]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (402)
+[2017.11.04-23.00.36:872][131]LogModuleManager: Shutting down and abandoning module SettingsEditor (400)
+[2017.11.04-23.00.36:872][131]LogModuleManager: Shutting down and abandoning module ProjectLauncher (398)
+[2017.11.04-23.00.36:872][131]LogModuleManager: Shutting down and abandoning module SessionFrontend (396)
+[2017.11.04-23.00.36:872][131]LogModuleManager: Shutting down and abandoning module ProfilerClient (394)
+[2017.11.04-23.00.36:872][131]LogModuleManager: Shutting down and abandoning module DeviceManager (392)
+[2017.11.04-23.00.36:872][131]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (391)
+[2017.11.04-23.00.36:925][131]LogModuleManager: Shutting down and abandoning module AutomationController (388)
+[2017.11.04-23.00.36:925][131]LogModuleManager: Shutting down and abandoning module AutomationWindow (386)
+[2017.11.04-23.00.36:925][131]LogModuleManager: Shutting down and abandoning module Layers (384)
+[2017.11.04-23.00.36:925][131]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (382)
+[2017.11.04-23.00.36:925][131]LogModuleManager: Shutting down and abandoning module DetailCustomizations (380)
+[2017.11.04-23.00.36:925][131]LogModuleManager: Shutting down and abandoning module PackagesDialog (378)
+[2017.11.04-23.00.36:926][131]LogModuleManager: Shutting down and abandoning module Persona (376)
+[2017.11.04-23.00.36:926][131]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (375)
+[2017.11.04-23.00.36:926][131]LogModuleManager: Shutting down and abandoning module AnimGraph (373)
+[2017.11.04-23.00.36:926][131]LogModuleManager: Shutting down and abandoning module Kismet (370)
+[2017.11.04-23.00.36:933][131]LogModuleManager: Shutting down and abandoning module ClassViewer (368)
+[2017.11.04-23.00.36:933][131]LogModuleManager: Shutting down and abandoning module Toolbox (366)
+[2017.11.04-23.00.36:933][131]LogModuleManager: Shutting down and abandoning module ModuleUI (364)
+[2017.11.04-23.00.36:933][131]LogModuleManager: Shutting down and abandoning module MovieSceneTools (362)
+[2017.11.04-23.00.36:933][131]LogModuleManager: Shutting down and abandoning module OutputLog (360)
+[2017.11.04-23.00.36:933][131]LogModuleManager: Shutting down and abandoning module GammaUI (358)
+[2017.11.04-23.00.36:933][131]LogModuleManager: Shutting down and abandoning module Documentation (356)
+[2017.11.04-23.00.36:933][131]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (354)
+[2017.11.04-23.00.36:933][131]LogModuleManager: Shutting down and abandoning module MovieScene (352)
+[2017.11.04-23.00.36:933][131]LogModuleManager: Shutting down and abandoning module Niagara (350)
+[2017.11.04-23.00.36:933][131]LogModuleManager: Shutting down and abandoning module NiagaraEditor (349)
+[2017.11.04-23.00.36:933][131]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (346)
+[2017.11.04-23.00.36:933][131]LogModuleManager: Shutting down and abandoning module AnalyticsET (344)
+[2017.11.04-23.00.36:933][131]LogModuleManager: Shutting down and abandoning module PortalServices (342)
+[2017.11.04-23.00.36:933][131]LogModuleManager: Shutting down and abandoning module PortalRpc (340)
+[2017.11.04-23.00.36:933][131]LogModuleManager: Shutting down and abandoning module MessagingRpc (338)
+[2017.11.04-23.00.36:933][131]LogModuleManager: Shutting down and abandoning module AIModule (336)
+[2017.11.04-23.00.36:933][131]LogModuleManager: Shutting down and abandoning module GameplayDebugger (335)
+[2017.11.04-23.00.36:933][131]LogModuleManager: Shutting down and abandoning module AITestSuite (333)
+[2017.11.04-23.00.36:933][131]LogModuleManager: Shutting down and abandoning module ProfilerService (330)
+[2017.11.04-23.00.37:124][131]LogModuleManager: Shutting down and abandoning module TaskGraph (328)
+[2017.11.04-23.00.37:124][131]LogModuleManager: Shutting down and abandoning module SteamVRController (326)
+[2017.11.04-23.00.37:124][131]LogModuleManager: Shutting down and abandoning module SteamVR (324)
+[2017.11.04-23.00.37:125][131]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (322)
+[2017.11.04-23.00.37:125][131]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (320)
+[2017.11.04-23.00.37:125][131]LogModuleManager: Shutting down and abandoning module OculusLibrary (318)
+[2017.11.04-23.00.37:125][131]LogModuleManager: Shutting down and abandoning module OculusInput (316)
+[2017.11.04-23.00.37:125][131]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (314)
+[2017.11.04-23.00.37:125][131]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (312)
+[2017.11.04-23.00.37:125][131]LogModuleManager: Shutting down and abandoning module CableComponent (310)
+[2017.11.04-23.00.37:125][131]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (308)
+[2017.11.04-23.00.37:125][131]LogModuleManager: Shutting down and abandoning module AndroidPermission (306)
+[2017.11.04-23.00.37:125][131]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (302)
+[2017.11.04-23.00.37:125][131]LogModuleManager: Shutting down and abandoning module RawInput (300)
+[2017.11.04-23.00.37:126][131]LogModuleManager: Shutting down and abandoning module HTML5Networking (298)
+[2017.11.04-23.00.37:126][131]LogModuleManager: Shutting down and abandoning module AlembicImporter (296)
+[2017.11.04-23.00.37:126][131]LogModuleManager: Shutting down and abandoning module AlembicLibrary (295)
+[2017.11.04-23.00.37:126][131]LogModuleManager: Shutting down and abandoning module GeometryCache (294)
+[2017.11.04-23.00.37:126][131]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (293)
+[2017.11.04-23.00.37:126][131]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (288)
+[2017.11.04-23.00.37:126][131]LogModuleManager: Shutting down and abandoning module SuperSearch (287)
+[2017.11.04-23.00.37:126][131]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (284)
+[2017.11.04-23.00.37:126][131]LogModuleManager: Shutting down and abandoning module PluginBrowser (282)
+[2017.11.04-23.00.37:126][131]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (280)
+[2017.11.04-23.00.37:126][131]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (278)
+[2017.11.04-23.00.37:126][131]LogModuleManager: Shutting down and abandoning module DesktopPlatform (277)
+[2017.11.04-23.00.37:126][131]LogModuleManager: Shutting down and abandoning module UObjectPlugin (274)
+[2017.11.04-23.00.37:126][131]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (272)
+[2017.11.04-23.00.37:127][131]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (270)
+[2017.11.04-23.00.37:127][131]LogModuleManager: Shutting down and abandoning module GitSourceControl (268)
+[2017.11.04-23.00.37:127][131]LogModuleManager: Shutting down and abandoning module SourceControl (267)
+[2017.11.04-23.00.37:127][131]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (264)
+[2017.11.04-23.00.37:127][131]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (262)
+[2017.11.04-23.00.37:127][131]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (260)
+[2017.11.04-23.00.37:127][131]LogModuleManager: Shutting down and abandoning module Paper2DEditor (258)
+[2017.11.04-23.00.37:127][131]LogModuleManager: Shutting down and abandoning module MeshPaint (257)
+[2017.11.04-23.00.37:127][131]LogModuleManager: Shutting down and abandoning module LevelEditor (255)
+[2017.11.04-23.00.37:130][131]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (254)
+[2017.11.04-23.00.37:130][131]LogModuleManager: Shutting down and abandoning module MainFrame (252)
+[2017.11.04-23.00.37:130][131]LogModuleManager: Shutting down and abandoning module HotReload (251)
+[2017.11.04-23.00.37:133][131]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (246)
+[2017.11.04-23.00.37:133][131]LogModuleManager: Shutting down and abandoning module PhysXVehicles (244)
+[2017.11.04-23.00.37:133][131]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (242)
+[2017.11.04-23.00.37:133][131]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (240)
+[2017.11.04-23.00.37:133][131]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (238)
+[2017.11.04-23.00.37:133][131]LogModuleManager: Shutting down and abandoning module UdpMessaging (236)
+[2017.11.04-23.00.37:234][131]LogModuleManager: Shutting down and abandoning module TcpMessaging (234)
+[2017.11.04-23.00.37:335][131]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (232)
+[2017.11.04-23.00.37:335][131]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (230)
+[2017.11.04-23.00.37:335][131]LogModuleManager: Shutting down and abandoning module FacialAnimation (228)
+[2017.11.04-23.00.37:335][131]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (226)
+[2017.11.04-23.00.37:335][131]LogModuleManager: Shutting down and abandoning module GraphEditor (225)
+[2017.11.04-23.00.37:336][131]LogModuleManager: Shutting down and abandoning module ContentBrowser (223)
+[2017.11.04-23.00.37:343][131]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (220)
+[2017.11.04-23.00.37:343][131]LogModuleManager: Shutting down and abandoning module Paper2D (218)
+[2017.11.04-23.00.37:343][131]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (216)
+[2017.11.04-23.00.37:343][131]LogModuleManager: Shutting down and abandoning module WmfMedia (214)
+[2017.11.04-23.00.37:344][131]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (212)
+[2017.11.04-23.00.37:344][131]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (210)
+[2017.11.04-23.00.37:344][131]LogModuleManager: Shutting down and abandoning module MediaAssets (208)
+[2017.11.04-23.00.37:344][131]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (206)
+[2017.11.04-23.00.37:344][131]LogModuleManager: Shutting down and abandoning module VREditor (204)
+[2017.11.04-23.00.37:344][131]LogModuleManager: Shutting down and abandoning module StringTableEditor (202)
+[2017.11.04-23.00.37:344][131]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (200)
+[2017.11.04-23.00.37:344][131]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (198)
+[2017.11.04-23.00.37:344][131]LogModuleManager: Shutting down and abandoning module FunctionalTesting (196)
+[2017.11.04-23.00.37:344][131]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (194)
+[2017.11.04-23.00.37:345][131]LogModuleManager: Shutting down and abandoning module UMG (192)
+[2017.11.04-23.00.37:345][131]LogModuleManager: Shutting down and abandoning module UMGEditor (191)
+[2017.11.04-23.00.37:345][131]LogModuleManager: Shutting down and abandoning module Sequencer (190)
+[2017.11.04-23.00.37:345][131]LogModuleManager: Shutting down and abandoning module AssetTools (188)
+[2017.11.04-23.00.37:346][131]LogModuleManager: Shutting down and abandoning module MessageLog (187)
+[2017.11.04-23.00.37:346][131]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (186)
+[2017.11.04-23.00.37:346][131]LogModuleManager: Shutting down and abandoning module SlateReflector (180)
+[2017.11.04-23.00.37:346][131]LogModuleManager: Shutting down and abandoning module Slate (178)
+[2017.11.04-23.00.37:346][131]LogModuleManager: Shutting down and abandoning module EditorStyle (176)
+[2017.11.04-23.00.37:363][131]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (174)
+[2017.11.04-23.00.37:363][131]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (172)
+[2017.11.04-23.00.37:363][131]LogModuleManager: Shutting down and abandoning module XAudio2 (170)
+[2017.11.04-23.00.37:363][131]LogModuleManager: Shutting down and abandoning module Networking (168)
+[2017.11.04-23.00.37:363][131]LogModuleManager: Shutting down and abandoning module Core (164)
+[2017.11.04-23.00.37:363][131]LogModuleManager: Shutting down and abandoning module AssetRegistry (162)
+[2017.11.04-23.00.37:610][131]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.11.04-23.00.37:610][131]LogDirectoryWatcher: A directory notification for '../../../../../../Users/miste/Documents/Unreal Projects/04_BattleTank/CarProject/Content/' was aborted.
+[2017.11.04-23.00.37:610][131]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.11.04-23.00.37:610][131]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/GearVR/Content/' was aborted.
+[2017.11.04-23.00.37:614][131]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (161)
+[2017.11.04-23.00.37:615][131]LogModuleManager: Shutting down and abandoning module KismetCompiler (158)
+[2017.11.04-23.00.37:615][131]LogModuleManager: Shutting down and abandoning module LevelSequence (156)
+[2017.11.04-23.00.37:615][131]LogModuleManager: Shutting down and abandoning module PhysXFormats (154)
+[2017.11.04-23.00.37:615][131]LogModuleManager: Shutting down and abandoning module MeshUtilities (152)
+[2017.11.04-23.00.37:615][131]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (151)
+[2017.11.04-23.00.37:615][131]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (149)
+[2017.11.04-23.00.37:616][131]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (147)
+[2017.11.04-23.00.37:616][131]LogModuleManager: Shutting down and abandoning module DerivedDataCache (144)
+[2017.11.04-23.00.37:704][131]LogDerivedDataCache: Shutdown
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module TargetPlatform (142)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (141)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (139)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (137)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (135)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (133)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (131)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (129)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (127)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (125)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (123)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module ImageWrapper (122)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (119)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (117)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (115)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (113)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (111)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (109)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (107)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (105)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (103)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module Messaging (101)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (99)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (97)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (95)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (93)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (91)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (89)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (87)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (85)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (83)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (81)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (79)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (77)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (75)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (73)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (71)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (69)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (67)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (65)
+[2017.11.04-23.00.37:704][131]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (63)
+[2017.11.04-23.00.37:705][131]LogModuleManager: Shutting down and abandoning module InputCore (60)
+[2017.11.04-23.00.37:705][131]LogModuleManager: Shutting down and abandoning module Settings (58)
+[2017.11.04-23.00.37:705][131]LogModuleManager: Shutting down and abandoning module OculusRift (56)
+[2017.11.04-23.00.37:705][131]LogModuleManager: Shutting down and abandoning module GearVRController (54)
+[2017.11.04-23.00.37:705][131]LogModuleManager: Shutting down and abandoning module GearVR (52)
+[2017.11.04-23.00.37:705][131]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (50)
+[2017.11.04-23.00.37:705][131]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
+[2017.11.04-23.00.37:705][131]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
+[2017.11.04-23.00.37:705][131]LogOnline:Display: Unloading online subsystem: NULL
+[2017.11.04-23.00.37:705][131]LogModuleManager: Shutting down and abandoning module XMPP (43)
+[2017.11.04-23.00.37:705][131]LogModuleManager: Shutting down and abandoning module HTTP (41)
+[2017.11.04-23.00.37:705][131]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.11.04-23.00.37:705][131]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B31B670D2-4AD9-D387-7574-2A9F9B18DA28%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.16.3-3561208%2B%2B%2BUE4%2BRelease-4.16&UserID=ce3b7575476c2ce884481f991de55820%7C63ea96b7705b4b03917e5c38ab34d353%7C7c752e28-e3ca-4d8c-a561-feedfdcda8c6&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.11.04-23.00.37:708][131]LogModuleManager: Shutting down and abandoning module SSL (40)
+[2017.11.04-23.00.37:709][131]LogModuleManager: Shutting down and abandoning module HTTPChunkInstaller (36)
+[2017.11.04-23.00.37:709][131]LogModuleManager: Shutting down and abandoning module AnimationModifiers (34)
+[2017.11.04-23.00.37:709][131]LogModuleManager: Shutting down and abandoning module PropertyEditor (33)
+[2017.11.04-23.00.37:709][131]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.11.04-23.00.37:709][131]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.11.04-23.00.37:709][131]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.11.04-23.00.37:709][131]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.11.04-23.00.37:709][131]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.11.04-23.00.37:710][131]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.11.04-23.00.37:710][131]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.11.04-23.00.37:710][131]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.11.04-23.00.37:711][131]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.11.04-23.00.37:711][131]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.11.04-23.00.37:711][131]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.11.04-23.00.37:711][131]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.11.04-23.00.37:711][131]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.11.04-23.00.37:711][131]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.11.04-23.00.37:711][131]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.11.04-23.00.37:711][131]LogExit: Exiting.
+[2017.11.04-23.00.37:720][131]Log file closed, 11/04/17 16:00:37
